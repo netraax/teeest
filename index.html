@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinted Analyzer - Analysez vos données de vente</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <script type="module" src="src/components/Header.js"></script>
+</head>
+<body class="bg-gray-50">
+    <header-component></header-component>
+    
+    <main class="container mx-auto px-4 py-8">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-vinted-primary mb-4">
+                Analysez votre boutique Vinted
+            </h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Obtenez des insights précieux sur vos ventes et votre performance, 
+                le tout en toute sécurité et confidentialité.
+            </p>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Comment ça marche ?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="font-semibold mb-2">1. Copiez vos données</h3>
+                    <p>Copiez les informations depuis votre profil Vinted</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="font-semibold mb-2">2. Collez et analysez</h3>
+                    <p>Collez les données dans notre outil et lancez l'analyse</p>
+                </div>
+                <div class="text-center p-4">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="font-semibold mb-2">3. Visualisez vos résultats</h3>
+                    <p>Obtenez des graphiques et statistiques détaillés</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-2xl font-semibold mb-4">Analyser ma boutique</h2>
+            <analyze-form></analyze-form>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+    
+    <script type="module" src="src/components/AnalyzeForm.js"></script>
+    <script type="module" src="src/components/Footer.js"></script>
+</body>
+</html>
